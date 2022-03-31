@@ -1,0 +1,39 @@
+body{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: #333;
+}
+i.fa{
+  padding: 20px;
+  width: 50px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin:5px 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+i.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3b5998;
+}
+.fa-twitter {
+  background: #55acee;
+}
+.fa-instagram {
+  background: #55acee;
+   color: #fff;
+  font-size: 220px;
+  line-height: 250px;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.fa-youtube {
+  background: #bb0000;
+}
