@@ -173,7 +173,77 @@ img{
   height: 100%;
 }
 
-@media screen and (min-width: 40em) and (max-width: 69em){
+.grid-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-gap: 2em;
+}
+
+footer{
+  margin-top: 40px;
+  background-color: black;
+  padding-top: 1em;
+}
+
+footer h1{
+  color: #fff;
+}
+.col-4{
+  padding: 10px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer1 h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.footer1 i {
+  margin: 30px 20px 10px;
+  font-size: 25px;
+  color: grey;
+}
+
+.footer1 p {
+  text-transform: lowercase;
+  color: gray;
+}
+.footer2 h4, .footer3 h4, .footer4 h4{
+   color: grey;
+   font-weight: 400;
+   font-size: 1.1em;
+}
+.footer hr{
+  width: 90%;
+  margin: 0 auto;
+}
+.footer .grid-wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+.copyright{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 3rem;
+  color: gray;
+}
+
+.copyright p{
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.foot{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 70em){
   header{
     padding: 0 2rem;
   }
@@ -212,9 +282,28 @@ img{
   .line{
     width: 42%;
   }
+
+  .col-4 h1{
+    font-size: 25px;
+  }
+
+  .footer1 h1 {
+    margin-bottom: 20px;
+  }
+
+  .footer2 h4, .footer3 h4, .footer4 h4{
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+ }
+
+ .copyright{
+   padding: 0;
+ }
+
 }
 
-@media screen and (max-width: 39em) {
+@media screen and (max-width: 40em) {
   header{
     margin: 0;
     display: block;
@@ -265,10 +354,29 @@ img{
     padding: 0 1.7rem;
   }
 
-  .categories
-
   .image-gallery{
     grid-template-columns: 1fr;
   }
+
+  .col-4{
+    margin-left: 10px;
+  }
+
+  .copyright{
+		display: flex;
+		flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+	}
+
+  .copyright p{
+    font-size: 12px;
+  }
+
+	.foot{
+		margin-top: -15px;
+    padding: 0;
+	}
 
 }
