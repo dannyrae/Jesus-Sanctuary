@@ -13,7 +13,7 @@ body{
 .top{
 	background-image: url("10.jpg");
 	background-repeat: no-repeat;
-	height: 80vh;
+	height: 100vh;
 	position: relative;
 }
 
@@ -39,15 +39,35 @@ li:hover{
 	color: #fff;
 }
 
-.ham-menu{
+/* .ham-menu{
 	display: block;
+} */
+
+.ham-menu{
+	background: none;
+	width: 30px;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	outline: none;
+	z-index: 1;
+	/* display: none; */
 }
 
-nav{
+.ham-menu span{
+	display: block;
+	height: 3px;
+	background-color: white;
+	margin: 6px 0;
+	position: relative;
+	transition: .3s linear;
+}
+
+.nav{
 	position: fixed;
 	height: 100vh;
 	width: 100%;
-	background-color: #48dbfb;
+	background-color: black;
 	top: 0;
 	right: -100%;
 	max-width: 100%;
@@ -55,7 +75,7 @@ nav{
 	transition: .3s linear;
 }
 
-nav.active{
+.nav.active{
 	right: 0;
 }
 
@@ -75,9 +95,10 @@ nav.active{
 .top h3{
 	font-size: 45px;
 	color: #fff;
-	position: absolute;
-	top: 45%;
-	right: 12%;
+	/* margin: 50% 0 0 15% ; */
+	display: flex;
+	justify-content: center;
+	margin-top: 50%;
 } 
 
 /*--- Main ---*/
@@ -228,7 +249,13 @@ footer{
 	}
 
 	.greetings {
-		padding: 2rem;
+		padding: 1rem;
+		display: grid;
+		grid-template-columns: 1.2fr 1fr;
+	}
+
+	.greetings > div{
+		padding: 1rem;
 	}
 
 	.greetings h4 {
@@ -284,7 +311,7 @@ footer{
 		display: flex;
 	}
 
-	.ham-menu{
+	/* .ham-menu{
 		background: none;
 		width: 30px;
 		border: none;
@@ -298,11 +325,11 @@ footer{
 	.ham-menu span{
 		display: block;
 		height: 3px;
-		background-color: black;
+		background-color: white;
 		margin: 6px 0;
 		position: relative;
 		transition: .3s linear;
-	}
+	} */
 	
 	ul{
 		display: inline-flex;
