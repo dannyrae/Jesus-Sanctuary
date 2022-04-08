@@ -194,7 +194,7 @@ footer{
 
 .copyright{
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
 	color: grey;
 	margin-top: 10px;
 	margin-bottom: 10px;
