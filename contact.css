@@ -1,10 +1,10 @@
-body{
+/* body{
   justify-content: center;
   display: flex;
   align-items: center;
   height: 100vh;
   background: #333;
-}
+} */
 i.fa{
   padding: 20px;
   width: 50px;
@@ -36,4 +36,41 @@ i.fa:hover {
 }
 .fa-youtube {
   background: #bb0000;
+}
+
+#sidebar{
+	position: absolute;
+	top: 0;
+	left: -200px;
+	width: 200px;
+	height: 100%;
+	background: #151719;
+	transition: all 300ms linear;
+}
+
+#sidebar.active{
+	left: 0;
+}
+
+#sidebar .toggle-btn{
+	position: absolute;
+	left: 220px;
+	top: 10px;
+}
+
+#sidebar .toggle-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: #151719;
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+#sidebar div.list ul li.item {
+	padding: 15px 10px;
+	border: 1px solid #444;
+	color: #fcfcfc;
+	text-transform: uppercase;
+	font-size: 15px;
 }
